@@ -1086,7 +1086,7 @@ a {
     }
 
     .page-hero {
-        padding: 2.25rem 1rem;
+        padding: 1.25rem 1rem;
     }
 
     .page-hero h1 {
@@ -1094,7 +1094,7 @@ a {
     }
 
     .page-content-wrap {
-        padding: 2rem 0 3rem;
+        padding: 1.25rem 0 2rem;
     }
 
     .page-content-wrap .container {
@@ -1127,7 +1127,7 @@ a {
 .page-hero {
     background-color: #eef0f4;
     border-bottom: 1px solid var(--border-color);
-    padding: 3.25rem 0;
+    padding: 1.75rem 0;
     text-align: center;
 }
 
@@ -1154,8 +1154,8 @@ a {
 }
 
 .page-content-wrap {
-    padding: 3.5rem 0 5rem;
-    background: rgba(244, 246, 251, 0.72);
+    padding: 2rem 0 3rem;
+    background: transparent;
 }
 
 .page-content-card {
@@ -1163,9 +1163,10 @@ a {
     border: 1px solid var(--border-color);
     border-radius: 16px;
     box-shadow: var(--card-shadow);
-    padding: 3rem;
-    max-width: 1080px;
+    padding: 2.25rem;
+    max-width: 1280px;
     margin: 0 auto;
+    color: #111111;
 }
 
 .page-content-card h2 {
@@ -1181,13 +1182,13 @@ a {
 }
 
 .page-content-card p {
-    color: var(--text-secondary);
+    color: #111111;
     margin-bottom: 1rem;
     line-height: 1.7;
 }
 
 .page-content-card ul {
-    color: var(--text-secondary);
+    color: #111111;
     margin: 0 0 1rem 1.25rem;
     line-height: 1.7;
 }
