@@ -1,0 +1,502 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>zpshikshakbankamt</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome for Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Header Area -->
+    <header class="main-header" style="text-align: center; padding: 1rem 0">
+      <div
+        class="container header-container"
+        style="justify-content: center; display: flex"
+      >
+        <div
+          class="logo-area"
+          style="display: flex; justify-content: center; width: 100%"
+        >
+          <img
+            src="logo.png"
+            alt="zpshikshakbankamt Logo"
+            class="bank-logo"
+            style="margin: 0 auto; height: 65px"
+          />
+        </div>
+      </div>
+    </header>
+
+    <!-- Scrolling Announcement Bar -->
+    <div class="announcement-ticker">
+      <div class="container ticker-container">
+        <div class="ticker-label">
+          <i class="fa-solid fa-bullhorn"></i> Important Update:
+        </div>
+        <div class="ticker-wrap">
+          <div class="ticker-content">
+            Last date for application form filling is 10-08-2026
+            &nbsp;&bull;&nbsp; अर्ज भरण्याची अंतिम तारीख 10-08-2026 आहे.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+      <div class="container main-grid">
+        <!-- Column 2: Candidate Login (Center) -> Now Left -->
+        <div class="login-column">
+          <div class="login-card-wrapper">
+            <!-- User Avatar Icon overlapping card border -->
+
+            <div class="login-card">
+              <div class="login-header">
+                <h2>Candidate Login</h2>
+                <p class="subtitle">Login to access your account</p>
+                <div class="separator-dots">
+                  <span class="line"></span>
+                  <span class="dot"></span>
+                  <span class="line"></span>
+                </div>
+              </div>
+
+              <form class="login-form">
+                <div class="form-group">
+                  <label for="userid">User ID (SRF No.)</label>
+                  <div class="input-wrapper">
+                    <i class="fa-regular fa-user input-icon"></i>
+                    <input
+                      type="text"
+                      id="userid"
+                      placeholder="Enter your user id"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="password">Password (DOB)</label>
+                  <div class="input-wrapper">
+                    <i class="fa-solid fa-lock input-icon"></i>
+                    <input
+                      type="password"
+                      id="password"
+                      placeholder="Enter your password"
+                      required
+                    />
+                    <button
+                      type="button"
+                      class="password-toggle"
+                      id="togglePassword"
+                    >
+                      <i class="fa-regular fa-eye"></i>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="form-options">
+                  <label class="checkbox-container">
+                    <input type="checkbox" id="showPasswordCheckbox" />
+                    <span class="checkmark"></span>
+                    Show Password
+                  </label>
+                </div>
+
+                <button type="submit" class="btn btn-login btn-block">
+                  <i class="fa-solid fa-arrow-right-to-bracket"></i> Login
+                </button>
+              </form>
+
+              <div class="login-footer-links">
+                <a href="#forgot-id">Forgot User ID?</a>
+                <span class="divider">|</span>
+                <a href="#forgot-password">Forgot Password?</a>
+              </div>
+
+              <!-- Light green-gray strip at bottom -->
+              <!-- <div class="card-register-strip">
+                            <span>Don't have an account?</span>
+                            <a href="#register" class="btn btn-register-card"><i class="fa-solid fa-user-plus"></i> New
+                                Registration</a>
+                        </div> -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Column 1: Marketing / Info (Left) -> Now Center -->
+        <div class="marketing-column">
+          <div
+            class="marketing-content"
+            style="
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+              height: 100%;
+              min-height: 400px;
+              gap: 2rem;
+              text-align: center;
+            "
+          >
+            <div
+              class="center-action-buttons"
+              style="
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+                width: 100%;
+                max-width: 320px;
+              "
+            >
+              <!-- <a href="#important-dates" class="nav-btn" style="padding: 0.8rem 1.5rem; font-size: 0.95rem; font-weight: 700; width: 100%; justify-content: center;"><i class="fa-regular fa-calendar-days" style="color: var(--accent-blue);"></i> Important Dates</a> -->
+              <!-- <a href="#important-notices" class="nav-btn" style="padding: 0.8rem 1.5rem; font-size: 0.95rem; font-weight: 700; width: 100%; justify-content: center;"><i class="fa-regular fa-bell" style="color: var(--accent-blue);"></i> Important Notices</a> -->
+              <a
+                href="#register"
+                class="btn btn-primary btn-register-center"
+                style="
+                  padding: 0.8rem 1.5rem;
+                  font-size: 0.95rem;
+                  font-weight: 700;
+                  width: 100%;
+                  justify-content: center;
+                "
+                ><i class="fa-solid fa-user-plus"></i> New Registration</a
+              >
+            </div>
+
+            <!-- Important Notices Card -->
+            <div
+              class="info-card notices-card"
+              id="important-notices"
+              style="
+                margin-top: 1rem;
+                width: 100%;
+                max-width: 380px;
+                text-align: left;
+              "
+            >
+              <div class="info-card-header">
+                <div
+                  class="card-icon notices-icon"
+                  style="background-color: #e0e7ff; color: var(--accent-blue)"
+                >
+                  <i class="fa-regular fa-bell"></i>
+                </div>
+                <h3>Important Notices</h3>
+              </div>
+              <div
+                class="header-underline"
+                style="background-color: var(--accent-blue)"
+              ></div>
+
+              <ul class="notices-list">
+                <li>
+                  <i class="fa-regular fa-file-pdf notice-icon"></i>
+                  <a href="#notice1">Notification for Recruitment 2025-26</a>
+                  <span class="badge badge-new">NEW</span>
+                </li>
+                <li>
+                  <i class="fa-regular fa-file-pdf notice-icon"></i>
+                  <a href="#notice2">Guidelines for Online Application</a>
+                  <span class="badge badge-new">NEW</span>
+                </li>
+                <li>
+                  <i class="fa-regular fa-file-pdf notice-icon"></i>
+                  <a href="#notice3">Document Verification Process</a>
+                  <span class="badge badge-new">NEW</span>
+                </li>
+                <li>
+                  <i class="fa-regular fa-file-pdf notice-icon"></i>
+                  <a href="#notice3">Document Verification Process</a>
+                  <span class="badge badge-new">NEW</span>
+                </li>
+                <li>
+                  <i class="fa-regular fa-file-pdf notice-icon"></i>
+                  <a href="#notice3">Document Verification Process</a>
+                  <span class="badge badge-new">NEW</span>
+                </li>
+                <li>
+                  <i class="fa-regular fa-file-pdf notice-icon"></i>
+                  <a href="#notice3">Document Verification Process</a>
+                  <span class="badge badge-new">NEW</span>
+                </li>
+                <li>
+                  <i class="fa-regular fa-file-pdf notice-icon"></i>
+                  <a href="#notice3">Document Verification Process</a>
+                  <span class="badge badge-new">NEW</span>
+                </li>
+                <li>
+                  <i class="fa-regular fa-file-pdf notice-icon"></i>
+                  <a href="#notice3">Document Verification Process</a>
+                  <span class="badge badge-new">NEW</span>
+                </li>
+                <li>
+                  <i class="fa-regular fa-file-pdf notice-icon"></i>
+                  <a href="#notice3">Document Verification Process</a>
+                  <span class="badge badge-new">NEW</span>
+                </li>
+              </ul>
+            </div>
+
+            <div
+              class="center-contact-strip"
+              style="
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 0.5rem;
+                font-size: 1rem;
+                font-weight: 600;
+                color: var(--primary-blue);
+                background-color: #ffffff;
+                padding: 0.75rem 1.5rem;
+                border-radius: 8px;
+                border: 1px solid var(--border-color);
+                box-shadow: var(--card-shadow);
+                width: 100%;
+                max-width: 320px;
+              "
+            >
+              <a
+                href="tel:८७९३६७५९०४"
+                style="display: flex; align-items: center; gap: 0.5rem"
+                ><i
+                  class="fa-solid fa-phone"
+                  style="color: var(--accent-green)"
+                ></i>
+                ८७९३६७५९०४ (स. ११:०० ते सायं. ०५:००)</a
+              >
+              <a
+                href="mailto:help@zpshikshakbankamt.co"
+                style="display: flex; align-items: center; gap: 0.5rem"
+                ><i
+                  class="fa-regular fa-envelope"
+                  style="color: var(--accent-green)"
+                ></i>
+                help@zpshikshakbankamt.co</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Column 3: Important Dates (Right) -->
+        <div class="dates-column">
+          <div class="info-card dates-card" id="important-dates">
+            <div class="info-card-header">
+              <div class="card-icon dates-icon">
+                <i class="fa-regular fa-calendar-days"></i>
+              </div>
+              <h3>Important Dates</h3>
+            </div>
+            <div class="header-underline"></div>
+
+            <div class="dates-timeline-container">
+              <!-- Connecting Timeline Line -->
+              <div class="timeline-line"></div>
+
+              <div class="dates-list">
+                <div class="date-item">
+                  <div class="date-badge date-start">
+                    <span class="day">04</span>
+                    <span class="month">May 2025</span>
+                  </div>
+                  <div class="timeline-node node-start"></div>
+                  <div class="date-details">
+                    <h4>Application Start Date</h4>
+                    <p>Online application process begins.</p>
+                    <span class="time"
+                      ><i class="fa-regular fa-clock"></i> 10:00 AM</span
+                    >
+                  </div>
+                </div>
+
+                <div class="date-item">
+                  <div class="date-badge date-last">
+                    <span class="day">17</span>
+                    <span class="month">May 2025</span>
+                  </div>
+                  <div class="timeline-node node-last"></div>
+                  <div class="date-details">
+                    <h4>Last Date for Application</h4>
+                    <p>Last date to submit online application form.</p>
+                    <span class="time"
+                      ><i class="fa-regular fa-clock"></i> 11:59 PM</span
+                    >
+                  </div>
+                </div>
+
+                <div class="date-item">
+                  <div class="date-badge date-admit">
+                    <span class="day">25</span>
+                    <span class="month">May 2025</span>
+                  </div>
+                  <div class="timeline-node node-admit"></div>
+                  <div class="date-details">
+                    <h4>Admit Card Release</h4>
+                    <p>Admit card will be available for download.</p>
+                    <span class="time"
+                      ><i class="fa-regular fa-clock"></i> 05:00 PM</span
+                    >
+                  </div>
+                </div>
+
+                <div class="date-item">
+                  <div class="date-badge date-exam">
+                    <span class="day">08</span>
+                    <span class="month">Jun 2025</span>
+                  </div>
+                  <div class="timeline-node node-exam"></div>
+                  <div class="date-details">
+                    <h4>Examination Date</h4>
+                    <p>Online examination will be conducted.</p>
+                    <span class="time"
+                      ><i class="fa-regular fa-clock"></i> 10:00 AM</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- <a href="#all-dates" class="btn-view-all">
+                        View All Dates <i class="fa-solid fa-chevron-right"></i>
+                    </a> -->
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer Area -->
+    <footer class="site-footer">
+      <div class="container footer-container">
+        <!-- Column 1: Logo -->
+        <div class="footer-col footer-logo-col">
+          <img
+            src="logo.png"
+            alt="Sangli District Central Co-Operative Bank Ltd. Logo"
+            class="footer-logo"
+          />
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div class="footer-col footer-links-col">
+          <h4 class="footer-heading">Quick Links</h4>
+          <div class="footer-links-grid">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="privacy-policy.html">Privacy Policy</a></li>
+              <li><a href="shipping-policy.html">Shipping Policy</a></li>
+            </ul>
+            <ul>
+              <li><a href="about-us.html">About Us</a></li>
+              <li><a href="return-policy.html">Return Policy</a></li>
+              <li>
+                <a href="terms-conditions.html">Terms &amp; Conditions</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Column 3: Contact -->
+        <div class="footer-col footer-contact-col">
+          <h4 class="footer-heading">Contact</h4>
+          <ul class="footer-contact-list">
+            <li>
+              <a href="tel:८७९३६७५९०४"
+                ><i class="fa-solid fa-phone"></i> ८७९३६७५९०४</a
+              >
+            </li>
+            <li>
+              <a href="mailto:help@zpshikshakbankamt.co"
+                ><i class="fa-regular fa-envelope"></i>
+                help@zpshikshakbankamt.co</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>
+          &copy; <span id="footer-year">2026</span> The Amravati Zilla Parishad
+          Shikshak Sahakari Bank Ltd., Amravati. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Interactive script for password toggle -->
+    <script>
+      const togglePassword = document.querySelector("#togglePassword");
+      const password = document.querySelector("#password");
+      const showPasswordCheckbox = document.querySelector(
+        "#showPasswordCheckbox",
+      );
+
+      function toggleVisibility() {
+        const type =
+          password.getAttribute("type") === "password" ? "text" : "password";
+        password.setAttribute("type", type);
+
+        const icon = togglePassword.querySelector("i");
+        if (type === "password") {
+          icon.className = "fa-regular fa-eye";
+          showPasswordCheckbox.checked = false;
+        } else {
+          icon.className = "fa-regular fa-eye-slash";
+          showPasswordCheckbox.checked = true;
+        }
+      }
+
+      document.getElementById("footer-year").textContent =
+        new Date().getFullYear();
+
+      togglePassword.addEventListener("click", toggleVisibility);
+
+      showPasswordCheckbox.addEventListener("change", function () {
+        if (this.checked) {
+          password.setAttribute("type", "text");
+          togglePassword.querySelector("i").className =
+            "fa-regular fa-eye-slash";
+        } else {
+          password.setAttribute("type", "password");
+          togglePassword.querySelector("i").className = "fa-regular fa-eye";
+        }
+      });
+    </script>
+    <button
+      type="button"
+      class="scroll-top-btn"
+      id="scrollTopBtn"
+      aria-label="Scroll to top"
+    >
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script>
+      const scrollTopBtn = document.getElementById("scrollTopBtn");
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 300) {
+          scrollTopBtn.classList.add("visible");
+        } else {
+          scrollTopBtn.classList.remove("visible");
+        }
+      });
+      scrollTopBtn.addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+    </script>
+  </body>
+</html>
